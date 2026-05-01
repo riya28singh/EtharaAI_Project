@@ -2,9 +2,9 @@ from typing import List
 from fastapi import FastAPI, Depends, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from sqlmodel import Session, select
-from database import create_db_and_tables, get_session
-from models import User, UserBase, Project, ProjectBase, Task, TaskBase, UserRole, TaskStatus
-from auth import get_password_hash, verify_password, create_access_token, get_current_user, check_admin
+from server.database import create_db_and_tables, get_session
+from server.models import User, UserBase, Project, ProjectBase, Task, TaskBase, UserRole, TaskStatus
+from server.auth import get_password_hash, verify_password, create_access_token, get_current_user, check_admin
 from fastapi.security import OAuth2PasswordRequestForm
 from pydantic import BaseModel
 from fastapi.staticfiles import StaticFiles
