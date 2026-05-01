@@ -2,8 +2,6 @@
 
 Ethara AI is a premium, full-stack project management application designed for speed and simplicity. It features a stunning glassmorphism interface, robust task tracking, and secure multi-user authentication.
 
-![Ethara AI Preview](https://web-production-a5d67.up.railway.app/)
-
 ## ✨ Features
 - **Premium Glassmorphism UI**: A modern, translucent design system with smooth micro-animations.
 - **Secure Authentication**: JWT-based login and signup with secure PBKDF2 password hashing.
