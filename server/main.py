@@ -148,7 +148,9 @@ def get_stats(session: Session = Depends(get_session), current_user: User = Depe
     if current_user.role == UserRole.ADMIN:
         tasks = session.exec(select(Task)).all()
     else:
-        tasks = session.exec(select(Task).where(Task.assignee_id == current_user.id)).all()
+        # Get all tasks where the project's owner is the current user
+        statement = select(Task).join(Project).where(Project.owner_id == current_user.id)
+        tasks = session.exec(statement).all()
     
     stats = {
         "total": len(tasks),
