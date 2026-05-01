@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethara AI | Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lucide-static@0.1.1/dist/lucide.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Content injected by app.js -->
+    </div>
+
+    <!-- Modals -->
+    <div id="projectModal" class="modal-overlay">
+        <div class="modal-content glass-container">
+            <h2>New Project</h2>
+            <div class="input-group">
+                <label>Project Name</label>
+                <input type="text" id="projName">
+            </div>
+            <div class="input-group">
+                <label>Description</label>
+                <input type="text" id="projDesc">
+            </div>
+            <button class="btn" onclick="app.createProject()">Create Project</button>
+            <button class="btn" style="background: transparent; margin-top: 10px;" onclick="ui.closeModal('projectModal')">Cancel</button>
+        </div>
+    </div>
+
+    <div id="taskModal" class="modal-overlay">
+        <div class="modal-content glass-container">
+            <h2>New Task</h2>
+            <div class="input-group">
+                <label>Task Title</label>
+                <input type="text" id="taskTitle">
+            </div>
+            <div class="input-group">
+                <label>Description</label>
+                <input type="text" id="taskDesc">
+            </div>
+            <button class="btn" onclick="app.createTask()">Add Task</button>
+            <button class="btn" style="background: transparent; margin-top: 10px;" onclick="ui.closeModal('taskModal')">Cancel</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
