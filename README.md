@@ -2,7 +2,7 @@
 
 Ethara AI is a premium, full-stack project management application designed for speed and simplicity. It features a stunning glassmorphism interface, robust task tracking, and secure multi-user authentication.
 
-![Ethara AI Preview](https://via.placeholder.com/800x450?text=Ethara+AI+Dashboard+Preview)
+![Ethara AI Preview](https://web-production-a5d67.up.railway.app/)
 
 ## ✨ Features
 - **Premium Glassmorphism UI**: A modern, translucent design system with smooth micro-animations.
@@ -46,6 +46,3 @@ This project is optimized for **Railway** or **Render**.
 - **Build Command**: `pip install -r requirements.txt`
 - **Start Command**: `uvicorn server.main:app --host 0.0.0.0 --port $PORT`
 - **Environment Variables**: Add `DATABASE_URL` for PostgreSQL support.
-
----
-Built with ❤️ by [Your Name]
